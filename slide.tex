@@ -1,0 +1,61 @@
+\documentclass{beamer}
+
+\usetheme{default}
+\usecolortheme{default}
+
+% Packages
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{kotex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bbm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{xcolor}
+
+% Define custom colors
+\definecolor{lightred}{RGB}{255,200,200}
+\definecolor{lightblue}{RGB}{200,220,255}
+\definecolor{darkred}{RGB}{255,150,150}
+\definecolor{darkblue}{RGB}{150,180,255}
+\definecolor{lightgreen}{RGB}{200,240,200}
+
+% Define highlight commands
+\newcommand{\redsquare}[1]{\colorbox{lightred}{#1}}
+\newcommand{\darkredsquare}[1]{\colorbox{darkred}{#1}}
+\newcommand{\bluesquare}[1]{\colorbox{lightblue}{#1}}
+\newcommand{\darkbluesquare}[1]{\colorbox{darkblue}{#1}}
+\newcommand{\greensquare}[1]{\colorbox{lightgreen}{#1}}
+
+% Set bullet points to dots globally
+\setbeamertemplate{itemize item}{$\bullet$}
+\setbeamertemplate{itemize subitem}{$\bullet$}
+
+% Add section to header
+\setbeamertemplate{headline}{%
+	\begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex]{section in head/foot}%
+		\insertsectionnavigationhorizontal{\paperwidth}{}{}%
+	\end{beamercolorbox}%
+}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+% Title page information
+\title{Supply Chain Disruptions: Evidence from the Great East Japan Earthquake}
+\author{Vasco M. Carvalho, 
+Makoto Nirei, 
+Yukiko U. Saito, 
+Alireza Tahbaz-Salehi}
+\date{\today}
+
+\begin{document}
+
+% Title frame
+\titlepage
+%-----------------------------------------------------------
+%-----------------------------------------------------------
+
+\end{document}
